@@ -9,7 +9,11 @@ Traveller.prototype.getJourneyStartLocations = function(journeys) {
   return journeyStart;
 };
 
-Traveller.prototype.getJourneyEndLocations = function () {
+Traveller.prototype.getJourneyEndLocations = function (journeys) {
+  const journeyEnd = this.journeys.map((journey)=>{
+    return journey.endLocation;
+  });
+  return journeyEnd;
 
 };
 
